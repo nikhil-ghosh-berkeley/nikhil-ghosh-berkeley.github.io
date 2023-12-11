@@ -1,84 +1,94 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
+@article{simon2023better,
+  title={More is Better in Modern Machine Learning: when Infinite Overparameterization is Optimal and Overfitting is Obligatory}, 
+  author={James B. Simon and Dhruva Karkada and Nikhil Ghosh and Mikhail Belkin},
+  year={2023},
+  arxiv={2311.14646},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  preprint={true},
+  abbr={arXiv},
+  journal={arXiv preprint},
+  abstract={In our era of enormous neural networks, empirical progress has been driven by the philosophy that more is better. Recent deep learning practice has found repeatedly that larger model size, more data, and more computation (resulting in lower training loss) improves performance. In this paper, we give theoretical backing to these empirical observations by showing that these three properties hold in random feature (RF) regression, a class of models equivalent to shallow networks with only the last layer trained.
+Concretely, we first show that the test risk of RF regression decreases monotonically with both the number of features and the number of samples, provided the ridge penalty is tuned optimally. In particular, this implies that infinite width RF architectures are preferable to those of any finite width. We then proceed to demonstrate that, for a large class of tasks characterized by powerlaw eigenstructure, training to near-zero training loss is obligatory: near-optimal performance can only be achieved when the training error is much smaller than the test error. Grounding our theory in real-world data, we find empirically that standard computer vision tasks with convolutional neural tangent kernels clearly fall into this class. Taken together, our results tell a simple, testable story of the benefits of overparameterization, overfitting, and more data in random feature models.},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{ghosh2023effect,
+  title={The Effect of SGD Batch Size on Autoencoder Learning: Sparsity, Sharpness, and Feature Learning}, 
+  author={Nikhil Ghosh and Spencer Frei and Wooseok Ha and Bin Yu},
+  year={2023},
+  arxiv={2308.03215},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  preprint={true},
+  abbr={arXiv},
+  journal={arXiv preprint},
+  abstract={In this work, we investigate the dynamics of stochastic gradient descent (SGD) when training a single-neuron autoencoder with linear or ReLU activation on orthogonal data. We show that for this non-convex problem, randomly initialized SGD with a constant step size successfully finds a global minimum for any batch size choice. However, the particular global minimum found depends upon the batch size. In the full-batch setting, we show that the solution is dense (i.e., not sparse) and is highly aligned with its initialized direction, showing that relatively little feature learning occurs. On the other hand, for any batch size strictly smaller than the number of samples, SGD finds a global minimum which is sparse and nearly orthogonal to its initialization, showing that the randomness of stochastic gradients induces a qualitatively different type of "feature selection" in this setting. Moreover, if we measure the sharpness of the minimum by the trace of the Hessian, the minima found with full batch gradient descent are flatter than those found with strictly smaller batch sizes, in contrast to previous works which suggest that large batches lead to sharper minima. To prove convergence of SGD with a constant step size, we introduce a powerful tool from the theory of non-homogeneous random walks which may be of independent interest.},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
+@inproceedings{baykal2023alternating,
+  title={Alternating Updates for Efficient Transformers},
+  author={Cenk Baykal and Dylan Cutler and Nishanth Dikkala and Nikhil Ghosh and Rina Panigrahy and Xin Wang},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  arxiv={2301.13310},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  preprint={false},
+  award={spotlight},
+  abbr={NeuRIPS}, 
+  year={2023},
+  blog={https://blog.research.google/2023/11/alternating-updates-for-efficient.html},
+  abstract={It has been well established that increasing scale in deep transformer networks leads to improved quality and performance. However, this increase in scale often comes with prohibitive increases in compute cost and inference latency. We introduce Alternating Updates (AltUp), a simple-to-implement method to increase a model's capacity without the computational burden. AltUp enables the widening of the learned representation, i.e., the token embedding, while only incurring a negligible increase in latency. AltUp achieves this by working on a subblock of the widened representation at each layer and using a predict-and-correct mechanism to update the inactivated blocks. We present extensions of AltUp, such as its applicability to the sequence dimension, and demonstrate how AltUp can be synergistically combined with existing approaches, such as Sparse Mixture-of-Experts models, to obtain efficient models with even higher capacity. Our experiments on benchmark transformer models and language tasks demonstrate the consistent effectiveness of AltUp on a diverse set of scenarios. Notably, on SuperGLUE and SQuAD benchmarks, AltUp enables up to 87% speedup relative to the dense baselines at the same accuracy.}
+}
+
+@article{ghosh2023universal,
+  title={A Universal Trade-off Between the Model Size, Test Loss, and Training Loss of Linear Predictors},
+  author={Ghosh, Nikhil and Belkin, Mikhail},
+  journal={SIAM Journal on Mathematics of Data Science (SIMODS)},
+  volume={5},
+  number={4},
+  pages={977--1004},
+  year={2023},
+  preprint={false},
+  abbr={SIMODS},
+  publisher={SIAM},
+  arxiv={2207.11621},
+  bibtex_show={true},
+  abstract={In this work we establish an algorithm and distribution independent non-asymptotic trade-off between the model size, excess test loss, and training loss of linear predictors. Specifically, we show that models that perform well on the test data (have low excess loss) are either "classical" -- have training loss close to the noise level, or are "modern" -- have a much larger number of parameters compared to the minimum needed to fit the training data exactly.
+We also provide a more precise asymptotic analysis when the limiting spectral distribution of the whitened features is Marchenko-Pastur. Remarkably, while the Marchenko-Pastur analysis is far more precise near the interpolation peak, where the number of parameters is just enough to fit the training data, it coincides exactly with the distribution independent bound as the level of overparametrization increases.}
+}
+
+@inproceedings{kaplun2023deconstructing,
+  title={Deconstructing Distributions: A Pointwise Framework of Learning}, 
+  author={Gal Kaplun* and Nikhil Ghosh* and Saurabh Garg and Boaz Barak and Preetum Nakkiran},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023},
+  arxiv={2202.09931},
+  preprint={false},
+  bibtex_show={true},
+  abbr={ICLR},
+  abstract={In machine learning, we traditionally evaluate the performance of a single model, averaged over a collection of test inputs. In this work, we propose a new approach: we measure the performance of a collection of models when evaluated on a single input point. Specifically, we study a point's profile: the relationship between models' average performance on the test distribution and their pointwise performance on this individual point. We find that profiles can yield new insights into the structure of both models and data -- in and out-of-distribution. For example, we empirically show that real data distributions consist of points with qualitatively different profiles. On one hand, there are "compatible" points with strong correlation between the pointwise and average performance. On the other hand, there are points with weak and even negative correlation: cases where improving overall model accuracy actually hurts performance on these inputs. We prove that these experimental observations are inconsistent with the predictions of several simplified models of learning proposed in prior work. As an application, we use profiles to construct a dataset we call CIFAR-10-NEG: a subset of CINIC-10 such that for standard models, accuracy on CIFAR-10-NEG is negatively correlated with accuracy on CIFAR-10 test. This illustrates, for the first time, an OOD dataset that completely inverts "accuracy-on-the-line" (Miller, Taori, Raghunathan, Sagawa, Koh, Shankar, Liang, Carmon, and Schmidt 2021)}
+}
+
+@inproceedings{ghosh2022stages,
+  title={The Three Stages of Learning Dynamics in High-Dimensional Kernel Methods},
+  author={Nikhil Ghosh and Song Mei and Bin Yu},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2022},
+  arxiv={2111.07167},
+  preprint={false},
+  bibtex_show={true},
+  abbr={ICLR},
+  abstract={To understand how deep learning works, it is crucial to understand the training dynamics of neural networks. Several interesting hypotheses about these dynamics have been made based on empirically observed phenomena, but there exists a limited theoretical understanding of when and why such phenomena occur.
+In this paper, we consider the training dynamics of gradient flow on kernel least-squares objectives, which is a limiting dynamics of SGD trained neural networks. Using precise high-dimensional asymptotics, we characterize the dynamics of the fitted model in two "worlds": in the Oracle World the model is trained on the population distribution and in the Empirical World the model is trained on a sampled dataset. We show that under mild conditions on the kernel and L2 target regression function the training dynamics undergo three stages characterized by the behaviors of the models in the two worlds. Our theoretical results also mathematically formalize some interesting deep learning phenomena. Specifically, in our setting we show that SGD progressively learns more complex functions and that there is a "deep bootstrap" phenomenon: during the second stage, the test error of both worlds remain close despite the empirical training error being much smaller. Finally, we give a concrete example comparing the dynamics of two different kernels which shows that faster training is not necessary for better generalization.}
+}
+
+@inproceedings{ghosh2019landmark,
+  title={Landmark Ordinal Embedding},
+  author={Nikhil Ghosh and Yuxin Chen and Yisong Yue},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2019},
+  arxiv={1910.12379},
+  bibtex_show={true},
+  preprint={false},
+  abbr={NeuRIPS},
+  abstract={In this paper, we aim to learn a low-dimensional Euclidean representation from a set of constraints of the form "item j is closer to item i than item k". Existing approaches for this "ordinal embedding" problem require expensive optimization procedures, which cannot scale to handle increasingly larger datasets. To address this issue, we propose a landmark-based strategy, which we call Landmark Ordinal Embedding (LOE). Our approach trades off statistical efficiency for computational efficiency by exploiting the low-dimensionality of the latent embedding. We derive bounds establishing the statistical consistency of LOE under the popular Bradley-Terry-Luce noise model. Through a rigorous analysis of the computational complexity, we show that LOE is significantly more efficient than conventional ordinal embedding approaches as the number of items grows. We validate these characterizations empirically on both synthetic and real datasets. We also present a practical approach that achieves the "best of both worlds", by using LOE to warm-start existing methods that are more statistically efficient but computationally expensive.}
 }

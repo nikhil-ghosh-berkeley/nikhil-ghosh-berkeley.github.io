@@ -26,6 +26,19 @@
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
+        {%- if entry.award -%}
+          <div class="award-badge">
+            {%- if site.data.awards[entry.award] -%}
+              {%- assign award_style = nil -%}
+              {%- if site.data.awards[entry.award].color != blank -%}
+                {%- assign award_style = site.data.awards[entry.award].color | prepend: 'style="background-color:' | append: '"' -%}
+              {%- endif -%}
+              <abbr class="badge" {% if award_style %}{{award_style}}{% endif %}><a href="{{site.data.awards[entry.award].url}}">{{entry.award}}</a></abbr>
+            {%- else -%}
+              <abbr class="badge">{{entry.award}}</abbr>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
         </div>
         {%- endif -%}
 
