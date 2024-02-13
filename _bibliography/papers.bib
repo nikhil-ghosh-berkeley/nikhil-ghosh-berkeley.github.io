@@ -3,12 +3,12 @@
 @article{simon2023better,
   title={More is Better in Modern Machine Learning: when Infinite Overparameterization is Optimal and Overfitting is Obligatory}, 
   author={James B. Simon and Dhruva Karkada and Nikhil Ghosh and Mikhail Belkin},
-  year={2023},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024},
   arxiv={2311.14646},
   bibtex_show={true},
-  preprint={true},
-  abbr={arXiv},
-  journal={arXiv preprint},
+  preprint={false},
+  abbr={ICLR},
   abstract={In our era of enormous neural networks, empirical progress has been driven by the philosophy that more is better. Recent deep learning practice has found repeatedly that larger model size, more data, and more computation (resulting in lower training loss) improves performance. In this paper, we give theoretical backing to these empirical observations by showing that these three properties hold in random feature (RF) regression, a class of models equivalent to shallow networks with only the last layer trained.
 Concretely, we first show that the test risk of RF regression decreases monotonically with both the number of features and the number of samples, provided the ridge penalty is tuned optimally. In particular, this implies that infinite width RF architectures are preferable to those of any finite width. We then proceed to demonstrate that, for a large class of tasks characterized by powerlaw eigenstructure, training to near-zero training loss is obligatory: near-optimal performance can only be achieved when the training error is much smaller than the test error. Grounding our theory in real-world data, we find empirically that standard computer vision tasks with convolutional neural tangent kernels clearly fall into this class. Taken together, our results tell a simple, testable story of the benefits of overparameterization, overfitting, and more data in random feature models.},
 }
