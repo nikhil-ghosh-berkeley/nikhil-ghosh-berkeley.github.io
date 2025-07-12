@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Fellow at the <a href='https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/'>Flatiron Institute</a>  # <a href='https://statistics.berkeley.edu/'>UC Berkeley Statistics</a>. Address. Contacts. Moto. Etc.
+subtitle: Research Fellow at the <a href='https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/'>Flatiron Institute</a> # <a href='https://statistics.berkeley.edu/'>UC Berkeley Statistics</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
     <p>New York, NY 10010</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items

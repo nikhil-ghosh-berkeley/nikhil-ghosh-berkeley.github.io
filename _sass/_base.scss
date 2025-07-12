@@ -761,7 +761,7 @@ footer.sticky-bottom {
         margin-bottom: 0.5rem; /* Adds space below the award badge */
         text-align: left; /* Aligns the award badge to the left */
         color: var(--global-theme-color) !important; /* Sets the text color to your global theme color */
-      
+
         /* Style for the <abbr> element with class 'badge' */
         abbr.badge {
           display: inline-block; /* Makes the badge inline but allows for width and height */
@@ -772,13 +772,13 @@ footer.sticky-bottom {
           background-color: transparent; /* Makes the background of the badge transparent */
           font-size: 0.8em; /* Adjust the font size as needed */
           border-radius: 10px; /* Optional: if you want rounded corners */
-          
+
           /* Style for the <a> element inside the <abbr> */
           a {
             color: var(--global-theme-color) !important; /* Inherits the text color from the .badge class */
             text-decoration: none; /* Ensures no underline appears */
           }
-      
+
           /* Style for the <a> element inside the <abbr> when hovered */
           a:hover {
             text-decoration: underline; /* Adds underline on hover for better user interaction */
