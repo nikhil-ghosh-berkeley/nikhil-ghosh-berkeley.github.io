@@ -1,5 +1,28 @@
 ---
 ---
+@article{hayou2025plop,
+  title={PLoP: Precise LoRA Placement for Efficient Finetuning of Large Models},
+  author={Hayou, Soufiane and Ghosh, Nikhil and Yu, Bin},
+  journal={arXiv preprint},
+  arxiv={2506.20629},
+  preprint={true},
+  year={2025},
+  bibtex_show={true},
+  abstract={Low-Rank Adaptation (LoRA) is a widely used finetuning method for large models. Its small memory footprint allows practitioners to adapt large models to specific tasks at a fraction of the cost of full finetuning. Different modifications have been proposed to enhance its efficiency by, for example, setting the learning rate, the rank, and the initialization. Another improvement axis is adapter placement strategy: when using LoRA, practitioners usually pick module types to adapt with LoRA, such as Query and Key modules. Few works have studied the problem of adapter placement, with nonconclusive results: original LoRA paper suggested placing adapters in attention modules, while other works suggested placing them in the MLP modules. Through an intuitive theoretical analysis, we introduce PLoP (Precise LoRA Placement), a lightweight method that allows automatic identification of module types where LoRA adapters should be placed, given a pretrained model and a finetuning task. We demonstrate that PLoP consistently outperforms, and in the worst case competes, with commonly used placement strategies through comprehensive experiments on supervised finetuning and reinforcement learning for reasoning.}
+}
+
+@article{hayou2024impact,
+  title={The Impact of Initialization on LoRA Finetuning Dynamics},
+  author={Hayou, Soufiane and Ghosh, Nikhil and Yu, Bin},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  arxiv={2406.08447},
+  preprint={false},
+  abbr={NeuRIPS},
+  year={2024},
+  bibtex_show={true},
+  abstract={In this paper, we study the role of initialization in Low Rank Adaptation (LoRA) as originally introduced in Hu et al. (2021). Essentially, to start from the pretrained model as initialization for finetuning, one can either initialize B to zero and A to random (default initialization in PEFT package), or vice-versa. In both cases, the product BA is equal to zero at initialization, which makes finetuning starts from the pretrained model. These two initialization schemes are seemingly similar. They should in-principle yield the same performance and share the same optimal learning rate. We demonstrate that this is an incorrect intuition and that the first scheme (initializing B to zero and A to random) on average yields better performance compared to the other scheme. Our theoretical analysis shows that the reason behind this might be that the first initialization allows the use of larger learning rates (without causing output instability) compared to the second initialization, resulting in more efficient learning of the first scheme. We validate our results with extensive experiments on LLMs.}
+}
+
 @article{simon2023better,
   title={More is Better in Modern Machine Learning: when Infinite Overparameterization is Optimal and Overfitting is Obligatory}, 
   author={James B. Simon and Dhruva Karkada and Nikhil Ghosh and Mikhail Belkin},
@@ -13,15 +36,18 @@
 Concretely, we first show that the test risk of RF regression decreases monotonically with both the number of features and the number of samples, provided the ridge penalty is tuned optimally. In particular, this implies that infinite width RF architectures are preferable to those of any finite width. We then proceed to demonstrate that, for a large class of tasks characterized by powerlaw eigenstructure, training to near-zero training loss is obligatory: near-optimal performance can only be achieved when the training error is much smaller than the test error. Grounding our theory in real-world data, we find empirically that standard computer vision tasks with convolutional neural tangent kernels clearly fall into this class. Taken together, our results tell a simple, testable story of the benefits of overparameterization, overfitting, and more data in random feature models.},
 }
 
-@article{ghosh2023effect,
+@article{ghosh2025effect,
   title={The Effect of SGD Batch Size on Autoencoder Learning: Sparsity, Sharpness, and Feature Learning}, 
   author={Nikhil Ghosh and Spencer Frei and Wooseok Ha and Bin Yu},
-  year={2023},
+  year={2025},
   arxiv={2308.03215},
   bibtex_show={true},
-  preprint={true},
-  abbr={arXiv},
-  journal={arXiv preprint},
+  preprint={false},
+  abbr={JMLR},
+  volume={26},
+  number={49},
+  pages={1--61},
+  journal={Journal of Machine Learning Research},
   abstract={In this work, we investigate the dynamics of stochastic gradient descent (SGD) when training a single-neuron autoencoder with linear or ReLU activation on orthogonal data. We show that for this non-convex problem, randomly initialized SGD with a constant step size successfully finds a global minimum for any batch size choice. However, the particular global minimum found depends upon the batch size. In the full-batch setting, we show that the solution is dense (i.e., not sparse) and is highly aligned with its initialized direction, showing that relatively little feature learning occurs. On the other hand, for any batch size strictly smaller than the number of samples, SGD finds a global minimum which is sparse and nearly orthogonal to its initialization, showing that the randomness of stochastic gradients induces a qualitatively different type of "feature selection" in this setting. Moreover, if we measure the sharpness of the minimum by the trace of the Hessian, the minima found with full batch gradient descent are flatter than those found with strictly smaller batch sizes, in contrast to previous works which suggest that large batches lead to sharper minima. To prove convergence of SGD with a constant step size, we introduce a powerful tool from the theory of non-homogeneous random walks which may be of independent interest.},
 }
 
